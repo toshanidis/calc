@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calc</title>
+</head>
+
+<body>
+  <div class="container">
+    <img class="phone-icon show" src="icon.svg" alt="icon">
+    <div class="gadget hidden">
+      <div class="gadget__top">
+        <div class="gadget__top-inner">
+          <div class="cam"></div>
+          <div class="speaker"></div>
+        </div>
+      </div>
+      <div class="main__display">
+        <div class="calc">
+          <input class="calc__display" placeholder="0">
+          <div class="buttons">
+            <div data onclick="clearDisplay()" class="button grey">AC</div>
+            <div onclick="minusPlus()" class="button grey">+/-</div>
+            <div onclick="calculate('%')" class="button grey">%</div>
+            <div onclick="calculate('/')" class="button orange">/</div>
+            <div onclick="calculate(7)" class="button">7</div>
+            <div onclick="calculate(8)" class="button">8</div>
+            <div onclick="calculate(9)" class="button">9</div>
+            <div onclick="calculate('*')" class="button orange">*</div>
+            <div onclick="calculate(4)" class="button">4</div>
+            <div onclick="calculate(5)" class="button">5</div>
+            <div onclick="calculate(6)" class="button">6</div>
+            <div onclick="calculate('-')" class="button orange">-</div>
+            <div onclick="calculate(1)" class="button">1</div>
+            <div onclick="calculate(2)" class="button">2</div>
+            <div onclick="calculate(3)" class="button">3</div>
+            <div onclick="calculate('+')" class="button orange">+</div>
+            <div onclick="calculate(0)" class="button zero">0</div>
+            <div onclick="calculate(',')" class="button">,</div>
+            <div onclick="Result()" class="button orange">=</div>
+          </div>
+        </div>
+      </div>
+      <div class="gadget__bottom">
+        <button class="big__button"></button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
